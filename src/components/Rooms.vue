@@ -27,63 +27,63 @@ export default {
           type: 'Estándar', 
           description: 'Habitación cómoda y asequible, ideal para estancias cortas.',
           price: '$100', 
-          image: '/src/assets/standard.jpg' 
+          image: '../assets/standard.jpg' 
         },
         { 
           id: 2, 
           type: 'Suite', 
           description: 'Habitación lujosa con amplio espacio y comodidades adicionales como sala de estar separada y vista panorámica.',
           price: '$200', 
-          image: '/src/assets/suite.jpg' 
+          image: '../assets/suite.jpg' 
         },
         { 
           id: 3, 
           type: 'Familiar', 
           description: 'Espaciosa habitación familiar con varias camas y área de juegos para niños.',
           price: '$150', 
-          image: '/src/assets/familiar.jpg' 
+          image: '../assets/familiar.jpg' 
         },
         { 
           id: 4, 
           type: 'Vista al Mar', 
           description: 'Habitación con vistas espectaculares al mar, ideal para parejas en escapadas románticas.',
           price: '$180', 
-          image: '/src/assets/oceanview.jpg' 
+          image: '../assets/oceanview.jpg' 
         },
         { 
           id: 5, 
           type: 'Ejecutiva', 
           description: 'Habitación diseñada para viajeros de negocios, con escritorio amplio y servicios ejecutivos.',
           price: '$160', 
-          image: '/src/assets/executive.jpg' 
+          image: '../assets/executive.jpg' 
         },
         { 
           id: 6, 
           type: 'Suite Presidencial', 
           description: 'La máxima expresión de lujo y confort, con múltiples habitaciones, jacuzzi privado y terraza con vistas exclusivas.',
           price: '$500', 
-          image: '/src/assets/presidential-suite.jpg' 
+          image: '../assets/presidential-suite.jpg' 
         },
         { 
           id: 7, 
           type: 'Habitación Temática', 
           description: 'Habitación decorada con temática única, ideal para huéspedes que buscan una experiencia original y memorable.',
           price: '$120', 
-          image: '/src/assets/themed-room.jpg' 
+          image: '../assets/themed-room.jpg' 
         },
         { 
           id: 8, 
           type: 'Habitación Deluxe', 
           description: 'Amplia habitación con diseño elegante y moderno, equipada con todas las comodidades para una estancia placentera.',
           price: '$130', 
-          image: '/src/assets/deluxe-room.jpg' 
+          image: '../assets/deluxe-room.jpg' 
         },
         { 
           id: 9, 
           type: 'Suite Familiar', 
           description: 'Suite espaciosa y confortable ideal para familias, con áreas separadas para adultos y niños.',
           price: '$180', 
-          image: '/src/assets/family-suite.jpg' 
+          image: '../assets/family-suite.jpg' 
         },
         
       ]
