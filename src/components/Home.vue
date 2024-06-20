@@ -3,7 +3,7 @@
     <section class="welcome">
       <div class="welcome-content">
         <h1>Bienvenido a Nuestro Hotel</h1>
-        <img src="../assets/hotel.jpg" alt="Hotel">
+        <img src="../assets/Hotel.jpg" alt="Hotel">
         <p>Disfruta de nuestros servicios excepcionales, incluyendo piscinas, restaurantes, spas y más.</p>
         <button @click="exploreMore">Explora Más</button>
       </div>
