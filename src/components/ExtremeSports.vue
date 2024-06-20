@@ -18,15 +18,15 @@ export default {
   data() {
     return {
       sports: [
-        { id: 2, name: 'Buceo', description: 'Explora el mundo submarino.', difficulty: 'Media', price: '$200', image: '/src/assets/diving.jpg' },
-        { id: 3, name: 'Ala Delta', description: 'Vuela como un pájaro sobre paisajes espectaculares.', difficulty: 'Alta', price: '$350', image: '/src/assets/hang-gliding.jpg' },
-        { id: 4, name: 'Escalada en Roca', description: 'Supera tus límites ascendiendo montañas desafiantes.', difficulty: 'Alta', price: '$250', image: '/src/assets/rock-climbing.jpg' },
-        { id: 5, name: 'Rafting', description: 'Desciende rápidos emocionantes en aguas bravas.', difficulty: 'Media', price: '$150', image: '/src/assets/rafting.jpg' },
-        { id: 6, name: 'Surf de Ola Grande', description: 'Domina olas gigantes en destinos famosos para surfistas.', difficulty: 'Alta', price: '$400', image: '/src/assets/big-wave-surfing.jpg' },
-        { id: 7, name: 'Parapente', description: 'Vuela en parapente disfrutando de vistas panorámicas.', difficulty: 'Media', price: '$180', image: '/src/assets/paragliding.jpg' },
-        { id: 8, name: 'Esquí Extremo', description: 'Desciende pendientes empinadas y fuera de pista.', difficulty: 'Alta', price: '$300', image: '/src/assets/extreme-skiing.jpg' },
-        { id: 9, name: 'Kitesurf', description: 'Surfea sobre el agua impulsado por una cometa.', difficulty: 'Media', price: '$250', image: '/src/assets/kitesurfing.jpg' },
-        { id: 10, name: 'Motocross', description: 'Recorre terrenos difíciles y desafiantes en motocicleta.', difficulty: 'Alta', price: '$350', image: '/src/assets/motocross.jpg' }
+        { id: 2, name: 'Buceo', description: 'Explora el mundo submarino.', difficulty: 'Media', price: '$200', image: '../assets/diving.jpg' },
+        { id: 3, name: 'Ala Delta', description: 'Vuela como un pájaro sobre paisajes espectaculares.', difficulty: 'Alta', price: '$350', image: '../assets/hang-gliding.jpg' },
+        { id: 4, name: 'Escalada en Roca', description: 'Supera tus límites ascendiendo montañas desafiantes.', difficulty: 'Alta', price: '$250', image: '../assets/rock-climbing.jpg' },
+        { id: 5, name: 'Rafting', description: 'Desciende rápidos emocionantes en aguas bravas.', difficulty: 'Media', price: '$150', image: '../assets/rafting.jpg' },
+        { id: 6, name: 'Surf de Ola Grande', description: 'Domina olas gigantes en destinos famosos para surfistas.', difficulty: 'Alta', price: '$400', image: '../assets/big-wave-surfing.jpg' },
+        { id: 7, name: 'Parapente', description: 'Vuela en parapente disfrutando de vistas panorámicas.', difficulty: 'Media', price: '$180', image: '../assets/paragliding.jpg' },
+        { id: 8, name: 'Esquí Extremo', description: 'Desciende pendientes empinadas y fuera de pista.', difficulty: 'Alta', price: '$300', image: '../assets/extreme-skiing.jpg' },
+        { id: 9, name: 'Kitesurf', description: 'Surfea sobre el agua impulsado por una cometa.', difficulty: 'Media', price: '$250', image: '../assets/kitesurfing.jpg' },
+        { id: 10, name: 'Motocross', description: 'Recorre terrenos difíciles y desafiantes en motocicleta.', difficulty: 'Alta', price: '$350', image: '../assets/motocross.jpg' }
       ]
     };
   }
