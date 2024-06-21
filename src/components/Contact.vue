@@ -1,17 +1,17 @@
 <template>
   <div class="contact">
-    <h1>Contacto</h1>
+    <h1>Contacto ✉️</h1>
 
     <div class="contact-details">
       <div class="contact-info">
-        <h2>Información de Contacto</h2>
+        <h2>Información de Contacto 📞</h2>
         <p><strong>Dirección:</strong> Calle Principal 123, Ciudad, País</p>
         <p><strong>Teléfono:</strong> +123 456 7890</p>
         <p><strong>Email:</strong> contacto@hotel.com</p>
       </div>
 
       <div class="contact-form">
-        <h2>Formulario de Contacto</h2>
+        <h2>Formulario de Contacto 📝</h2>
         <form @submit.prevent="submitForm">
           <div class="form-group">
             <label for="name">Nombre:</label>
@@ -30,9 +30,9 @@
       </div>
     </div>
 
-    <h2>Ubicación</h2>
+    <h2>Ubicación 📍</h2>
     <div class="map-container">
-      <iframe src="https://maps.google.com/maps?q=hotel%20location&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://maps.google.com/maps?q=hotel%20location&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
 </template>
@@ -50,9 +50,7 @@ export default {
   },
   methods: {
     submitForm() {
-      // Aquí normalmente se enviaría el formulario, pero por ahora mostramos un mensaje
       alert('Mensaje enviado');
-      // Puedes agregar aquí la lógica para enviar el formulario a tu servidor
     }
   }
 };
@@ -60,29 +58,43 @@ export default {
 
 <style scoped>
 .contact {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
-.contact h1, .contact h2 {
+.contact h1 {
+  text-align: center;
+  color: #17a2b8;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact h2 {
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .contact-details {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-.contact-info {
+.contact-info, .contact-form {
   flex: 1;
-}
-
-.contact-form {
-  flex: 1;
-  margin-left: 30px;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -97,15 +109,12 @@ export default {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
-}
-
-.contact-form textarea {
-  resize: vertical;
+  margin-bottom: 10px;
 }
 
 .contact-form button {
@@ -125,15 +134,20 @@ export default {
 
 .map-container {
   margin-top: 30px;
-  width: 100%;
-  height: 450px;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 iframe {
   width: 100%;
-  height: 100%;
+  height: 450px;
   border: none;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 </style>
