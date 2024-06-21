@@ -3,7 +3,7 @@
     <section class="welcome">
       <div class="welcome-content">
         <h1>Bienvenido a Nuestro Hotel</h1>
-        <img src="../assets/Hotel.jpg" alt="Hotel">
+        <img src="/img/Hotel.jpg" alt="Hotel">
         <p>Disfruta de nuestros servicios excepcionales, incluyendo piscinas, restaurantes, spas y más.</p>
         <button @click="exploreMore">Explora Más</button>
       </div>
@@ -11,17 +11,17 @@
 
     <section class="features">
       <div class="feature">
-        <img src="../assets/pool.jpg" alt="Piscina">
+        <img src="/img/pool.jpg" alt="Piscina">
         <h2>Piscinas de Lujo</h2>
         <p>Nuestras piscinas ofrecen vistas impresionantes y comodidades de primera clase.</p>
       </div>
       <div class="feature">
-        <img src="../assets/restaurant.jpg" alt="Restaurante">
+        <img src="/img/restaurant.jpg" alt="Restaurante">
         <h2>Gastronomía Exquisita</h2>
         <p>Descubre nuestros restaurantes con menús elaborados por chefs reconocidos internacionalmente.</p>
       </div>
       <div class="feature">
-        <img src="../assets/spa.jpg" alt="Spa">
+        <img src="/img/spa.jpg" alt="Spa">
         <h2>Relajación en el Spa</h2>
         <p>Relájate y rejuvenece en nuestro spa de clase mundial, con tratamientos personalizados.</p>
       </div>
