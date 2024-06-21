@@ -85,7 +85,6 @@ export default {
           price: '$180', 
           image: './img/family-suite.jpg' 
         },
-        
       ]
     };
   },
@@ -112,6 +111,15 @@ export default {
 <style scoped>
 .rooms {
   padding: 20px;
+  background: linear-gradient(to right, #e3f2fd, #e8f5e9);
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
 .room-row {
@@ -123,17 +131,19 @@ export default {
 
 .room {
   width: calc(30% - 10px);
-  background-color: #f8f9fa;
+  background: white;
   border: 1px solid #ced4da;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .room:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .room-image {
@@ -145,30 +155,54 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.room:hover .room-image img {
+  transform: scale(1.1);
 }
 
 .room-info {
   padding: 15px;
   text-align: left;
+  background: #f9f9f9;
 }
 
 .room-info h2 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: #34495e;
 }
 
 .room-info p {
   margin-bottom: 10px;
   font-size: 1rem;
+  color: #7f8c8d;
 }
 
 .room-info .description {
-  color: #6c757d;
+  color: #95a5a6;
 }
 
 .room-info .price {
   font-weight: bold;
+  color: #2c3e50;
+}
+
+.room-info button {
+  background: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.room-info button:hover {
+  background: #3498db;
 }
 
 @media (max-width: 992px) {

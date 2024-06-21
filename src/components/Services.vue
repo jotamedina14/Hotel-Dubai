@@ -1,17 +1,16 @@
 <template>
   <div class="services">
-    <h1>Servicios</h1>
-    <div class="service-card" v-for="service in services" :key="service.name" >
-      <i :class="service.icon"></i>
+    <h1>Servicios 🌟</h1>
+    <div class="service-card" v-for="service in services" :key="service.name" @click="showService(service)">
+      <span class="service-emoji">{{ service.emoji }}</span>
       <h2>{{ service.name }}</h2>
       <p>{{ service.description }}</p>
     </div>
     
     <div v-if="selectedService" class="modal" @click="closeModal">
-      <div class="modal-content">
+      <div class="modal-content" @click.stop>
         <span class="close" @click="closeModal">&times;</span>
         <h2>{{ selectedService.name }}</h2>
-        
         <p>{{ selectedService.description }}</p>
       </div>
     </div>
@@ -24,16 +23,16 @@ export default {
   data() {
     return {
       services: [
-        { name: 'Piscina', description: 'Disfruta de nuestra piscina al aire libre.', icon: 'fas fa-swimming-pool',},
-        { name: 'Spa', description: 'Relájate y rejuvenece en nuestro spa.', icon: 'fas fa-spa', },
-        { name: 'Restaurante', description: 'Degusta deliciosas comidas en nuestro restaurante.', icon: 'fas fa-utensils', },
-        { name: 'Gimnasio', description: 'Mantente en forma en nuestro gimnasio bien equipado.', icon: 'fas fa-dumbbell', }
+        { name: 'Piscina', description: 'Disfruta de nuestra piscina al aire libre.', emoji: '🏊‍♂️' },
+        { name: 'Spa', description: 'Relájate y rejuvenece en nuestro spa.', emoji: '💆‍♀️' },
+        { name: 'Restaurante', description: 'Degusta deliciosas comidas en nuestro restaurante.', emoji: '🍽️' },
+        { name: 'Gimnasio', description: 'Mantente en forma en nuestro gimnasio bien equipado.', emoji: '🏋️‍♂️' }
       ],
       selectedService: null
     }
   },
   methods: {
-    showImage(service) {
+    showService(service) {
       this.selectedService = service;
     },
     closeModal() {
@@ -45,20 +44,20 @@ export default {
 
 <style scoped>
 .services {
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   padding: 40px 20px;
   text-align: center;
 }
 
 .services h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #2c3e50;
   margin-bottom: 30px;
 }
 
 .service-card {
-  background-color: white;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
@@ -74,21 +73,21 @@ export default {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.service-card i {
+.service-emoji {
   font-size: 3em;
-  color: #17a2b8;
+  display: block;
   margin-bottom: 15px;
 }
 
 .service-card h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 10px;
 }
 
 .service-card p {
   font-size: 1.1em;
-  color: #666;
+  color: #7f8c8d;
   margin-bottom: 0;
 }
 
@@ -108,15 +107,9 @@ export default {
 .modal-content {
   background-color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   position: relative;
-}
-
-.modal-content img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .modal-content .close {

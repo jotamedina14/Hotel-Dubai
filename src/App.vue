@@ -20,7 +20,7 @@ export default {
 <style>
 /* Estilos generales */
 nav {
-  background: linear-gradient(90deg, rgb(30, 2, 122) 0%, rgb(66, 7, 227) 50%, rgb(30, 2, 122) 100%);
+  background: linear-gradient(90deg, rgb(45, 21, 126) 0%, rgb(103, 52, 242) 50%, rgb(45, 21, 126) 100%);
   padding: 15px 0;
   text-align: center;
   width: 100%;
